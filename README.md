@@ -15,3 +15,7 @@ to bring up the prompt.
 
 Type '?' for help.
 
+## Dependencies
+* ffmpeg
+* mpv
+* pulseaudio
