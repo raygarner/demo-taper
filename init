@@ -3,4 +3,5 @@ mkdir "$1" || exit
 mkdir "$1/mixes" && mkdir "$1/raw"
 read -p "Project bpm: " BPM
 echo "$BPM" > "$1/bpm"
+echo "$1" > "$1/name"
 cp .start.sh "$1/start"

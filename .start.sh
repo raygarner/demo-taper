@@ -1,14 +1,16 @@
 #!/bin/sh
+NAME=`cat name`
+
 while [ 1 ]; do
     read -p '> ' COMMAND ARG1 ARG2
 
     case COMMAND in
         record)
-            ../.record.sh "$ARG1"
+            ../.record.sh "$ARG1" "$NAME"
             ;;
 
         mix)
-            ../.mix.sh "$ARG1" "$ARG2"
+            ../.mix.sh "$ARG1" "$ARG2" "$NAME"
             ;;
 
         quit)
