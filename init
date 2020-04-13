@@ -1,0 +1,7 @@
+#!/bin/sh
+mkdir "$1" || exit
+mkdir "$1/mixes" && mkdir "$1/raw"
+read -p "Project bpm: " BPM
+echo "$BPM" > "$1/bpm"
+cp .mix "$1/mix"
+cp .record "$1/record"
