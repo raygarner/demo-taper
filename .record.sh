@@ -6,4 +6,4 @@ BPM=`cat bpm`
 read -p "$BPM"
 st -e $DIR/../.click/click $BPM &
 #st -e /home/ray/src/demotaper/.click/click 90 &
-ffmpeg -f pulse -i default "raw/$1.wav"
+ffmpeg -f pulse -i default "audio/$1.wav"

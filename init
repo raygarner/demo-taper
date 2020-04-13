@@ -1,6 +1,6 @@
 #!/bin/sh
 mkdir "$1" || exit
-mkdir "$1/mixes" && mkdir "$1/raw"
+mkdir "$1/audio"
 read -p "Project bpm: " BPM
 echo "$BPM" > "$1/bpm"
 echo "$1" > "$1/name"
