@@ -1,0 +1,3 @@
+ffmpeg -f pulse -i default out.wav
+
+ffmpeg -i in.wav -i in2.wav -filter_complex amerge=intputs=2 -ac 2 output.wav
