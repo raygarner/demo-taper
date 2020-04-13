@@ -5,3 +5,4 @@ read -p "Project bpm: " BPM
 echo "$BPM" > "$1/bpm"
 echo "$1" > "$1/name"
 cp .start.sh "$1/start"
+cd "$1"
