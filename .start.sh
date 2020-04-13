@@ -21,6 +21,10 @@ while [ 1 ]; do
             echo "$ARG1" > bpm
             ;;
 
+        "overdub")
+            ../.overdub.sh "$ARG1" "$ARG2"
+            ;;
+
         "?")
             ../.help.sh
             ;;
