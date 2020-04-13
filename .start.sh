@@ -25,6 +25,14 @@ while [ 1 ]; do
             ../.overdub.sh "$ARG1" "$ARG2"
             ;;
 
+        "list")
+            ../.list.sh
+            ;;
+
+        "playback")
+            ../.playback.sh "$ARG1"
+            ;;
+
         "?")
             ../.help.sh
             ;;
