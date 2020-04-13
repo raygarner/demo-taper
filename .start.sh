@@ -4,18 +4,28 @@ while [ 1 ]; do
 
     case COMMAND in
         record)
-            ../.record "$ARG1"
+            ../.record.sh "$ARG1"
             ;;
 
         mix)
-            ../.mix "$ARG1" "$ARG2"
+            ../.mix.sh "$ARG1" "$ARG2"
             ;;
 
         quit)
             exit
             ;;
 
+        bpm)
+            echo "$ARG1" > bpm
+            ;;
+
+        ?)
+            ../.help.sh
+            ;;
+
         *)
+            ../.help.sh
+            ;;
     esac
 
 done
