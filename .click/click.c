@@ -12,26 +12,33 @@
 
 double CalcInterval(int bpm);
 int play();
+void buildCommand(char *command);
 
 double CalcInterval(int bpm)
 {
     return ONEBPM / bpm;
 }
 
-int play()
+int play(char *command)
 {
-    char command[64];
+    return system(command);
+}
+
+void buildCommand(char *command)
+{
     strcpy(command, PLAYER);
     strcat(command, CLICK);
-    return system(command);
 }
 
 int main(int argc, char **argv)
 {
     double interval = CalcInterval(atoi(argv[argc - 1]));
+    char command[64];
+
+    buildCommand(command);
 
     while (1) {
-        play();
+        play(command);
 
         usleep(interval);
     }
