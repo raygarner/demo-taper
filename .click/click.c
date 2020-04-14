@@ -8,7 +8,7 @@
 #define ONESEC 1000000
 #define ONEBPM 60000000
 #define CLICK  "/home/ray/src/demotaper/.click/beep.wav &"
-#define PLAYER "mpv "
+#define PLAYER "aplay -q -t wav "
 
 double CalcInterval(int bpm);
 int play();

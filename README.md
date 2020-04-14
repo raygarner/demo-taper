@@ -19,3 +19,4 @@ Type '?' for help.
 * ffmpeg
 * mpv
 * pulseaudio
+* aplay
