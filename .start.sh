@@ -29,6 +29,10 @@ while [ 1 ]; do
             ../.list.sh
             ;;
 
+        "remove")
+            ../.remove.sh
+            ;;
+
         "playback")
             ../.playback.sh "$ARG1"
             ;;
